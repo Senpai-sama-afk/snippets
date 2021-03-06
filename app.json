@@ -1,0 +1,36 @@
+
+  "name": "TG Beta Migrater",
+  "description": "Telegram's beta migrater.",
+  "keywords": [
+    "telegram",
+    "best",
+    "open",
+    "source",
+    "multi",
+  ],
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": "1612895957:AAHRjRhg_kOG8rLbXMYj4mbw9p_nkjSrsyQ"
+   
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": ""
+    },
+   
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
