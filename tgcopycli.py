@@ -11,18 +11,6 @@ from pyrogram.errors import FloodWait
 
 parser = argparse.ArgumentParser(description='CLI tool for copying files bw two channels')
 parser.add_argument(
-    "-i", "--api-id", help="API id from my.telegram.org",
-    required=True, type=int
-)
-parser.add_argument(
-    "-a", "--api-hash", help="API hash from my.telegram.org",
-    required=True
-)
-parser.add_argument(
-    "-s", "--session", help="Pyrogram session string (optional)",
-    default="anything"
-)
-parser.add_argument(
     "-f", "--fromc", help="from chat id",
     required=True, type=int
 )
@@ -36,11 +24,7 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-user = Client(
-    args.session,
-    api_id=args.api_id,
-    api_hash=args.api_hash
-)
+user = Client(args.session)
 
 
 @user.on_message(filters.command('copy') & filters.me)
